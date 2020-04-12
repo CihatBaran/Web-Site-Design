@@ -18,10 +18,6 @@ html {
 
 }
 
-.row {
-    width:1140px;
-    margin: 0 auto;
-}
 
 /*html global font-size*/
 
@@ -30,22 +26,133 @@ html {
 /* USE IT LATER */
 /* ################################################ */
 
+.row {
+    width: 75%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+
+
+h1,
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
 
 h1 {
     margin-top: 0;
+    margin-bottom: 1rem;
     color: #fff;
     font-size: 3rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    letter-spacing: .5px;
+    font-size: 1.9rem;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+.marg-t {
     margin-bottom: 1rem;
+}
+
+.box {
+    padding:1%;
+}
+
+.line {
+    width: 33rem;
+    margin: 0 auto;
+    position: relative;
+    top: -.7rem;
+    left: .3rem;
+
+
+}
+
+.line:before,
+.line:after {
+    content: "";
+    display: table;
+}
+
+.line:after {
+    clear: both;
+}
+
+.first-line {
+    height: 3px;
+    width: 16rem;
+    background: #28A745;
+    float: left;
+}
+
+.second-line {
+    height: 3px;
+    width: 16.5rem;
+    background: #DC3545;
+    float: left;
+}
+
+.h2-after:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 5rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
 
 }
 
 /* BUTTONS */
+
+/****** Paragraphs ***********/
+
+.long-copy {
+    line-height: 145%;
+    width:70%;
+    margin-left:15%;
+}
+
+.box p {
+    line-height: 145%;
+    font-size:.9rem;
+}
+
+
+/* ################################################ */
+/* ICON */
+/* ################################################ */
+.icon-bigger {
+    font-size:3rem;
+    display:block;
+    margin-bottom:1rem;
+    margin-left:2rem;
+    color:#e67e22;
+    
+}
+
+
+/* BUTTONS */
+
 .btn:link,
-.btn:visited{
+.btn:visited {
     /*a is an inline element*/
     display: inline-block;
     padding: 10px 30px;
@@ -57,32 +164,36 @@ h1 {
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited {
     color: #fff;
     background-color: #e67e22;
     border: 1px solid #e67e22;
 }
 
 .btn-ghost:link,
-.btn-ghost:visited{
+.btn-ghost:visited {
     border: 1px solid #e67e22;
     color: #e67e22;
 }
 
 .btn:hover,
-.btn:active{
-    background-color: #cf6d17;
+.btn:active {
+    font-weight: 400;
 }
 
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #cf6d17;
+    border: 1px solid #fff;
+    color: #cf6d17;
+    background-color: #fff;
+
 }
 
 
 .btn-ghost:hover,
-.btn-ghost:active{
+.btn-ghost:active {
+    background-color: #cf6d17;
     border: 1px solid #cf6d17;
     color: #fff;
 }
@@ -103,31 +214,30 @@ header {
 
 .hero-text-box {
     position: absolute;
-    width: 1140px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .logo {
-    height:6rem;
-    width:auto;
-    float:left;
-    margin-top:1rem;
+    height: 6rem;
+    width: auto;
+    float: left;
+    margin-top: 1rem;
 }
 
-.main-nav{
-    margin-top:0;
-    float:right;
+.main-nav {
+    margin-top: 0;
+    float: right;
     list-style: none;
-    margin-top:2rem;
+    margin-top: 2rem;
     font-weight: 400;
 }
 
 .main-nav li {
-    display:inline-block;
-    margin-left:1rem;
-  
+    display: inline-block;
+    margin-left: 1rem;
+
 }
 
 .main-nav li a:link,
@@ -135,23 +245,26 @@ header {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:.9rem;
-    padding:.3rem;
-    transition:border .5s, background .5s
+    font-size: .9rem;
+    padding: .3rem;
+    transition: border .2s;
 }
 
 
 .main-nav li a:hover,
-.main-nav li a:active{
-    border-bottom:2px solid #e67e22;
+.main-nav li a:active {
+    border-left: 2px solid #e88731;
+    color: #e88731
 }
 
+.danger {
+    color: #DC3545;
+    font-weight: 400;
 
+}
 
-
-
-
-
-
-
+.success {
+    color: #28A745;
+    font-weight: 400;
+}
 

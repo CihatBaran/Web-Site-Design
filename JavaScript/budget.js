@@ -308,6 +308,10 @@ var UIController = (function () {
             }
 
             document.querySelector(DOMstrings.budgetLabel).textContent = formatNumber(obj.budget, typeNumber(obj.budget));
+            if (obj.budget >= 1000000){
+                alert("You are welcome to open a new branch")
+                window.location.href = "index.html";
+            }
             document.querySelector(DOMstrings.incomeLabel).textContent = formatNumber(obj.totalInc, 'inc');
             document.querySelector(DOMstrings.expenseLabel).textContent = formatNumber(obj.totalExp, 'exp');
 
@@ -502,6 +506,7 @@ var controller = (function (budgetCtrl, UICtrl) {
                 percentage: -1,
             });
             setupEventListener();
+           confirm("Calculate your budget, it is more than 1 million, if so you can open a new branch!")
 
         }
     }
