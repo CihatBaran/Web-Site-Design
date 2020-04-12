@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -26,6 +27,8 @@ html {
 /* USE IT LATER */
 /* ################################################ */
 
+
+
 .row {
     width: 75%;
     margin: 0 auto;
@@ -33,12 +36,13 @@ html {
 
 section {
     padding: 4rem 0;
+
 }
 
 
 
 h1,
-h2{
+h2 {
     font-weight: 300;
     text-transform: uppercase;
 
@@ -72,7 +76,7 @@ h3 {
 }
 
 .box {
-    padding:1%;
+    padding: 1%;
 }
 
 .line {
@@ -85,13 +89,13 @@ h3 {
 
 }
 
-.line:before,
-.line:after {
+.clearfix:before,
+.clearfix:after {
     content: "";
     display: table;
 }
 
-.line:after {
+.clearfix:after {
     clear: both;
 }
 
@@ -120,32 +124,32 @@ h3 {
 
 }
 
-/* BUTTONS */
 
 /****** Paragraphs ***********/
-
 .long-copy {
     line-height: 145%;
-    width:70%;
-    margin-left:15%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 1rem;
 }
 
 .box p {
     line-height: 145%;
-    font-size:.9rem;
+    font-size: .9rem;
 }
+
 
 
 /* ################################################ */
 /* ICON */
 /* ################################################ */
 .icon-bigger {
-    font-size:3rem;
-    display:block;
-    margin-bottom:1rem;
-    margin-left:2rem;
-    color:#e67e22;
-    
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    color: #e67e22;
+
 }
 
 
@@ -206,7 +210,6 @@ h3 {
 header {
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/food_img/hero.jpg);
-
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -254,7 +257,7 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-left: 2px solid #e88731;
-    color: #e88731
+    color: #e88731;
 }
 
 .danger {
@@ -267,4 +270,228 @@ header {
     color: #28A745;
     font-weight: 400;
 }
+
+
+
+
+/* ################################################ */
+/* SECTION MEAL */
+/* ################################################ */
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+
+}
+
+.meal-photo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.meal-photo img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    transform: scale(1.3);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.8;
+
+}
+
+.section-meals {
+    padding: 0;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/* ################################################ */
+/* SECTION SOCIAL */
+/* ################################################ */
+
+.section-social {
+    box-shadow: 2px 2px 5px #aaaaaa;
+        
+}
+
+
+.social_container{
+    margin-left:12rem;
+}
+
+.social_container ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.social_list {
+    width:100%;
+}
+
+.social-photo {
+    width:100%;
+}
+
+.social-photo img {
+    width:100%;
+    height:auto;
+}
+
+
+social_textContainer {
+    padding:1rem;
+}
+.social_textone {
+    margin-top:3rem;
+}
+
+.social_texttwo{
+    
+    margin-top:.8rem;
+
+}
+
+
+.icon_container {
+    width:100%;
+}
+
+.icon_text,
+.icon_div {
+    margin:1rem;
+    padding:.3rem .8rem;
+    margin-left:4rem;    
+}
+
+.icon_text {
+    padding:.8rem;
+    line-height: 1.4rem;
+    
+}
+
+.icon_div {
+    font-size:1.7rem;
+    display:inline-block;
+    float:left;
+    border:2px solid #e67e22;
+    color:#e67e22;
+    border-radius: 50%;
+}
+
+
+.icon_div:hover {
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.social_media_images {
+    width:70%;
+    margin:0 auto;
+    margin-top:2rem;
+}
+
+.image_ios,
+.image_google_play {
+    width:50%;
+    float:left;
+    padding:1rem;
+}
+
+.media_image {
+    height:2.5rem;
+}
+ 
+.image_ios {
+    padding-left:0;
+}
+
+
+
+/* ################################################ */
+/* SECTION CITIES */
+/* ################################################ */
+
+.cities-container {
+    width: 100%;
+}
+.cities-columns {
+    padding:1rem;
+    height:auto;
+   
+}
+
+.city-image-container {
+    background-color:#333;
+    width:100%;
+}
+
+.city-image-container img {
+    width: 100%;
+    height:9rem;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: transform .5s,
+        opacity .5s;
+}
+
+.city-image-container img:hover {
+    transform: scale(1.2);
+    opacity:1;
+}
+
+.city-photo-text {
+    
+    width: 100%;
+    margin:0 auto;
+    margin-top:1rem;
+}
+.city-icon-div {
+    margin:.5rem 0;
+    margin-left:.5rem;
+    
+
+}
+
+.city-icon {
+    color:#e67e22;
+    font-size:.8rem
+}
+
+
+.city-icon-text {
+    display: inline-block;
+    font-size:.7rem;
+    padding-left:3%;
+}
+
+.city-name {
+    font-weight: 300;
+    font-size:1.3rem;
+    line-height: 1.4rem;
+    margin-bottom:.6rem;
+}
+
+
+/* ################################################ */
+/* SECTION CUSTOMER EXPERIENCE */
+/* ################################################ */
+
+
+
+
 
