@@ -1,3 +1,8 @@
+/* ################################################ */
+/* SETUP PROJECT */
+/* ################################################ */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,25 +18,18 @@ html {
 
 }
 
+.row {
+    width:1140px;
+    margin: 0 auto;
+}
+
 /*html global font-size*/
 
-header {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/food_img/hero.jpg);
+/* ################################################ */
+/* USE IT LATER */
+/* ################################################ */
 
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 h1 {
     margin-top: 0;
@@ -45,6 +43,7 @@ h1 {
 
 }
 
+/* BUTTONS */
 .btn:link,
 .btn:visited{
     /*a is an inline element*/
@@ -89,16 +88,63 @@ h1 {
 }
 
 
+/* ################################################ */
+/* HEADER */
+/* ################################################ */
+
+header {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/food_img/hero.jpg);
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height:5rem;
+    width:auto;
+    float:left;
+    margin-top:1rem;
+}
+
+.main-nav{
+    margin-top:0;
+    float:right;
+    list-style: none;
+    margin-top:2rem;
+    font-weight: 400;
+}
+
+.main-nav li {
+    display:inline-block;
+    margin-left:1rem;
+  
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:.9rem;
+    padding:.3rem;
+    transition:border .5s, background .5s
+}
 
 
-
-
-
-
-
-
-
-
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom:2px solid #e67e22;
+}
 
 
 
