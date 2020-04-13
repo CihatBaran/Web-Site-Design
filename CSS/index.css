@@ -213,6 +213,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -324,12 +325,12 @@ header {
 
 .section-social {
     box-shadow: 2px 2px 5px #aaaaaa;
-        
+
 }
 
 
-.social_container{
-    margin-left:12rem;
+.social_container {
+    margin-left: 12rem;
 }
 
 .social_container ul {
@@ -338,57 +339,60 @@ header {
 }
 
 .social_list {
-    width:100%;
+    width: 100%;
 }
 
 .social-photo {
-    width:100%;
+    width: 100%;
 }
 
 .social-photo img {
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
 }
 
 
 social_textContainer {
-    padding:1rem;
-}
-.social_textone {
-    margin-top:3rem;
+    padding: 1rem;
 }
 
-.social_texttwo{
-    
-    margin-top:.8rem;
+.social_textone {
+    margin-top: 3rem;
+}
+
+.social_texttwo {
+
+    margin-top: .8rem;
 
 }
 
 
 .icon_container {
-    width:100%;
+    width: 100%;
 }
 
 .icon_text,
 .icon_div {
-    margin:1rem;
-    padding:.3rem .8rem;
-    margin-left:4rem;    
+    margin: 1rem;
+    padding: .3rem .8rem;
+    margin-left: 4rem;
 }
 
 .icon_text {
-    padding:.8rem;
+    padding: .8rem;
     line-height: 1.4rem;
-    
+
 }
 
 .icon_div {
-    font-size:1.7rem;
-    display:inline-block;
-    float:left;
-    border:2px solid #e67e22;
-    color:#e67e22;
+    font-size: 1.7rem;
+    display: inline-block;
+    float: left;
+    border: 2px solid #e67e22;
+    color: #e67e22;
     border-radius: 50%;
+    transition: background .5s,
+        color .5s
 }
 
 
@@ -400,24 +404,24 @@ social_textContainer {
 
 
 .social_media_images {
-    width:70%;
-    margin:0 auto;
-    margin-top:2rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .image_ios,
 .image_google_play {
-    width:50%;
-    float:left;
-    padding:1rem;
+    width: 50%;
+    float: left;
+    padding: 1rem;
 }
 
 .media_image {
-    height:2.5rem;
+    height: 2.5rem;
 }
- 
+
 .image_ios {
-    padding-left:0;
+    padding-left: 0;
 }
 
 
@@ -429,20 +433,21 @@ social_textContainer {
 .cities-container {
     width: 100%;
 }
+
 .cities-columns {
-    padding:1rem;
-    height:auto;
-   
+    padding: 1rem;
+    height: auto;
+
 }
 
 .city-image-container {
-    background-color:#333;
-    width:100%;
+    background-color: #333;
+    width: 100%;
 }
 
 .city-image-container img {
     width: 100%;
-    height:9rem;
+    height: 9rem;
     object-fit: cover;
     opacity: 0.7;
     transition: transform .5s,
@@ -451,45 +456,184 @@ social_textContainer {
 
 .city-image-container img:hover {
     transform: scale(1.2);
-    opacity:1;
+    opacity: 1;
 }
 
 .city-photo-text {
-    
+
     width: 100%;
-    margin:0 auto;
-    margin-top:1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
+
 .city-icon-div {
-    margin:.5rem 0;
-    margin-left:.5rem;
-    
+    margin: .5rem 0;
+    margin-left: .5rem;
+
 
 }
 
 .city-icon {
-    color:#e67e22;
-    font-size:.8rem
+    color: #e67e22;
+    font-size: .8rem
 }
 
+.twitter {
+    color: #ff8a22;
+    text-decoration: underline;
+}
+
+.twitter:hover {
+    color: #e8b78b;
+}
 
 .city-icon-text {
     display: inline-block;
-    font-size:.7rem;
-    padding-left:3%;
+    font-size: .7rem;
+    padding-left: 3%;
+
 }
 
 .city-name {
     font-weight: 300;
-    font-size:1.3rem;
+    font-size: 1.3rem;
     line-height: 1.4rem;
-    margin-bottom:.6rem;
+    margin-bottom: .6rem;
 }
 
 
 /* ################################################ */
 /* SECTION CUSTOMER EXPERIENCE */
 /* ################################################ */
+
+
+.section-customer-experience {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/food_img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+
+}
+
+blockquote {
+    padding:2%;
+    font-style:italic;
+    line-height: 1.4rem;
+    position:relative;
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size:5rem;
+    display:block;
+    position:absolute;
+    top:-0.25rem;
+    left:-.25rem;
+}
+
+
+
+cite {
+    font-size:.9rem;
+    margin-top:1.1rem;
+    display:block;
+    
+}
+
+
+
+cite img {
+    height:2.6rem;
+    border-radius: 50%;
+    margin:.5rem;
+    vertical-align: middle;
+}
+
+
+/* ################################################ */
+/* SECTION Pricing */
+/* ################################################ */
+
+.section-pricing {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    width:90%;
+    margin-left:5%;
+    box-shadow: 0 2px 2px #d4d4d4;
+    
+}
+
+.plan-box div {
+    padding:.75rem;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.plan-box div ul {
+    list-style: none;
+    
+}
+
+.plan-box div ul li {
+    padding: .25rem 0;
+}
+
+.plan-box div ul li i {
+    font-size:.75rem;
+    color: #e67e22;
+    margin-right:.7rem;
+    
+}
+
+
+.plan-price {
+    font-size:2rem;
+    font-weight: lighter;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size:1rem;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size:.8rem;
+    
+}
+
+.plan-box div:first-child {
+    background-color: #fff5f5;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border-bottom:0px solid #e5e5e5;
+}
+
+.plan-box div:last-child {
+    margin-left:20%;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
