@@ -2,6 +2,14 @@ WEB TECHNOLOGIES 2, PROJECT TEAM SUBMISSION
 
 CIHAT BARAN - C0765911
 
+Project is based on 3 different web site;
+1- Food Company
+2- Software Company
+3- Budget Calculation
+
+There are hyper links between pages.
+
+Here is the external resources that i used grid, icon and color picker
 
 https://ionicons.com
 https://fontawesome.com/icons
