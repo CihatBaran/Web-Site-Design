@@ -606,7 +606,7 @@ cite img {
 }
 
 .plan-box div:first-child {
-    background-color: #fff5f5;
+    background-color: #ededed;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
     border-bottom:0px solid #e5e5e5;
@@ -617,23 +617,120 @@ cite img {
 }
 
 
+/* ################################################ */
+/* SECTION Pricing */
+/* ################################################ */
+.contact-form {
+    background-color:#f0f0f0;
+}
+
+form{
+    margin-top:1rem;   
+}
+
+input {
+    width:100%;
+    padding:.25rem;
+    margin-top:.2rem;
+    
+}
+
+select {
+    margin-top:.2rem;
+    height:2rem;
+}
 
 
+textarea{
+    width:100%;
+    margin-top:.5rem;
+}
+
+.send {
+    width:5rem;
+    height:2rem;
+    cursor:pointer;
+    
+}
 
 
+/* ################################################ */
+/* SECTION Footer */
+/* ################################################ */
+
+footer {
+   background-color: #3e3d3d;
+    padding:2.5rem;
+    padding-bottom:0.4rem;
+    
+}
+
+.footer-nav {
+    list-style: none;
+    float:left;
+}
+
+.social-links {
+    list-style: none;
+    float:right;
+}
+
+.footer-nav li,
+.social-links li {
+    display:inline-block;
+    margin-right:1rem;
+    
+}
+
+.color-footer{
+   color: #e6e6e6;
+    font-size:1.2rem;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+    
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    transition: color .2s;
+    
+}
+
+.color-footer:hover,
+.color-footer:active{
+    color:#9b9b9b;
+}
 
 
+.bottom_sign {
+    color: #888;
+    text-align: center;
+    font-size:.6rem;
+    padding-top:2rem;
+}
 
+.footer-facebook:hover{
+    color:#1877F2;
+}
 
+.footer-twitter:hover {
+    color:#1DA1F2;
+}
 
+.footer-instagram:hover{
+    color:#C32AA3;
+}
 
-
-
-
-
-
-
-
+.footer-whatsapp:hover{
+    color:#25D366;
+}
 
 
 
